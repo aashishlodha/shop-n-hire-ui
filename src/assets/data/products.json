@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Headphones",
+        "price": "2132",
+        "image": "./assets/products/small/apple-headphones.jpg",
+        "brand": "Apple",
+        "category": "Electronics"
+    },
+    {
+        "name": "Casual Shoes",
+        "price": "120",
+        "image": "./assets/products/small/formal-shoes.jpg",
+        "brand": "Bata",
+        "category": "Fashion"
+    },
+    {
+        "name": "Wrist Watch",
+        "price": "10000",
+        "image": "./assets/products/small/fossil-watch.jpg",
+        "brand": "Fossil",
+        "category": "Fashion"
+    },
+    {
+        "name": "Smart phone Black",
+        "price": "50",
+        "image": "./assets/products/small/black-smartphone.jpg",
+        "brand": "Samsung",
+        "category": "Electronics"
+    },
+    {
+        "name": "Sports Shoes",
+        "price": "1500",
+        "image": "./assets/products/small/sports-shoes.jpg",
+        "brand": "Adidas",
+        "category": "Fashion"
+    },
+    {
+        "name": "Headphones",
+        "price": "2132",
+        "image": "./assets/products/small/apple-headphones.jpg",
+        "brand": "Apple",
+        "category": "Electronics"
+    },
+    {
+        "name": "Casual Shoes",
+        "price": "120",
+        "image": "./assets/products/small/formal-shoes.jpg",
+        "brand": "Bata",
+        "category": "Fashion"
+    },
+    {
+        "name": "Wrist Watch",
+        "price": "10000",
+        "image": "./assets/products/small/fossil-watch.jpg",
+        "brand": "Fossil",
+        "category": "Fashion"
+    },
+    {
+        "name": "Smart phone Black",
+        "price": "50",
+        "image": "./assets/products/small/black-smartphone.jpg",
+        "brand": "Samsung",
+        "category": "Electronics"
+    },
+    {
+        "name": "Sports Shoes",
+        "price": "1500",
+        "image": "./assets/products/small/sports-shoes.jpg",
+        "brand": "Adidas",
+        "category": "Fashion"
+    }
+]

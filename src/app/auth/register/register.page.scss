@@ -1,0 +1,39 @@
+/*.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+ion-button, ion-item {
+    width: 85%;
+    margin: 0px auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}*/
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    // align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: center;
+    // margin-top: 24px;
+    justify-content: center;
+}
+
+main {
+    flex-grow: 2;
+}

@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "firstName": "Aashish",
+            "lastName": "Lodha",
+            "email": "lodhaaashish@gmail.com",
+            "password": "1234"
+        },
+        {
+            "firstName": "Yogesh",
+            "lastName": "Dakre",
+            "email": "yogeshdakre@gmail.com",
+            "password": "4321"
+        }
+    ],
+
+    "orders": [
+
+    ],
+
+    "cart": [
+
+    ]
+}

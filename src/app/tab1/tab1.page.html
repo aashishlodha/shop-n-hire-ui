@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Shop
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+        <!-- <ion-badge color="danger" slot="end">12</ion-badge> -->
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar animated="true" autocorrect="off"></ion-searchbar>
+  <div *ngIf="!products">
+    <ion-list>
+      <ion-list-header>
+        <ion-label>
+          <ion-skeleton-text animated style="width: 20%"></ion-skeleton-text>
+        </ion-label>
+      </ion-list-header>
+      <ion-item *ngFor="let i of [].constructor(10)">
+        <ion-thumbnail slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+          </h3>
+          <p>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </p>
+          <p>
+            <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="products">
+    <ion-list>
+      <ion-item *ngFor="let product of products">
+        <ion-thumbnail slot="start">
+          <ion-img [src]="product.image"></ion-img>
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h3>{{ product.name }}</h3>
+          </ion-text>
+          <p>{{ product.brand }}</p>
+          <ion-text color="secondary">Rs. {{ product.price }} </ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="products && products.length === 0">
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img src="./assets/icon/search-not-found.png"></ion-img>
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="danger">
+            <h3>No products found.</h3>
+          </ion-text>
+          <p>Try different word or category</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,58 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="8" offset-sm="2" size-sm="6" offset-sm="3" class="ion-text-center">
+        <div class="header">
+          <img class="logo" src="assets/icon/favicon.png"/>
+          <ion-text color="primary">
+            <h1>Company</h1>
+          </ion-text>
+        </div>
+        <ion-card>
+          <!-- <ion-card-header>
+            <ion-card-title>Login</ion-card-title>
+          </ion-card-header> -->
+          <ion-card-content>
+            <div class="form-box">
+              <div class="form-login">
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input name="email" type="email" [(ngModel)]="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input name="password" type="password" [(ngModel)]="password" required></ion-input>
+                </ion-item>
+                <br/>
+                <ion-button color="success" type="submit" expand="block" (click)="login()">Sign in</ion-button>
+              </div>
+          
+              <!-- <div class="footer">
+                <span class="or-option">OR</span>
+                <ion-button type="button" expand="block" color="success" [routerLink]="['/register']">Register</ion-button>
+              </div> -->
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="8" offset-sm="2" size-sm="6" offset-sm="3" class="ion-text-center">
+        <ion-card class="register-card" padding>
+          <ion-card-content>
+            New to My App? 
+            <ion-text color="primary" [routerLink]="['/register']">
+              Create an account.
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
